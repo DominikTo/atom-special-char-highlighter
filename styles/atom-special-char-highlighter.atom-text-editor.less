@@ -6,26 +6,26 @@
 // Since these styles applies to the editor, this file needs to be loaded in the
 // context of the editor.
 
-// Very specific way to style the gutter numbers. Doing this so they show up
+// Very specific way to style the line-number numbers. Doing this so they show up
 // above the `.cursor-line` decorations applied when you select lines.
 //
 // A less specific way to select them would be
 //
-// `.gutter .line-number.gutter-green`{}
+// `.gutter .line-number.line-number-green`{}
 //
 // But will be overridden by the `.cursor-line` decorations.
-.editor.editor-colors .gutter .line-number {
-  &.gutter-green {
+atom-text-editor::shadow .gutter .line-number {
+  &.line-number-green {
     color: #fff;
     background-color: @green-color;
   }
 
-  &.gutter-blue {
+  &.line-number-blue {
     color: #fff;
     background-color: @blue-color;
   }
 
-  &.gutter-red {
+  &.line-number-red {
     color: #fff;
     background-color: @red-color;
   }
